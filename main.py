@@ -10,6 +10,8 @@ def get_book_text(bookLocation):
 ##Main function
 def main():
     bookPath = 'books/frankenstein.txt'
+    print("============ BOOKBOT ============")
+    print (f"Analyzing book found at {bookPath}...") 
     bookApplied = get_book_text(bookPath)
     NumWords = get_num_words(bookApplied)
     countText(bookApplied)
