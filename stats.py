@@ -5,7 +5,7 @@ def get_num_words(splitText):
     lowerText = lowercaseText(splitText)
     wordCount = lowerText.split()
     #print (f"{wordCount}")
-    countText (wordCount)
+   # countText (wordCount)
 
     return (len(wordCount))
 
@@ -16,13 +16,16 @@ def lowercaseText(splitText):
 ##go through each character in the string lowercaseText
 ##passing the # of times a character appears into wordDict
 
-def countText(modText):
+def countText(listText):
     wordDict = {}
+    modText = lowercaseText(listText)
     for lowerWord in modText:
         for char in lowerWord:
             wordDict[char] = wordDict.get(char, 0) + 1
-            #Get Char is the heart of this problem
-    print (wordDict)
+            #get(char,0) is the heart of this solution
+ #   print (wordDict)
+    for char, count in wordDict.items():
+        print(f"{char}: {count}")
 
 
-            
+
