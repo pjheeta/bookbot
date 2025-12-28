@@ -4,8 +4,9 @@
 def get_num_words(splitText):
     lowerText = lowercaseText(splitText)
     wordCount = lowerText.split()
+    #print (f"{wordCount}")
     countText (wordCount)
-    print (wordCount)
+
     return (len(wordCount))
 
 #Function to lowers all text in the string splitText
@@ -20,6 +21,7 @@ def countText(modText):
     for lowerWord in modText:
         for char in lowerWord:
             wordDict[char] = wordDict.get(char, 0) + 1
+            #Get Char is the heart of this problem
     print (wordDict)
 
 
